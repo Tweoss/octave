@@ -1,0 +1,13 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "OctaveDebugger",
+			"request": "launch",
+			"name": "Sample",
+			"program": "${relativeFile}",
+			"octave": "/usr/local/bin/octave-cli",
+			"sourceFolder": "${workspaceFolder}",
+		},
+	]
+}

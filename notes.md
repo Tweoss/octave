@@ -268,12 +268,14 @@ x =
 
 ## [Syllabus](#table-of-contents)
 
-<div style="page-break-after: always"></div>
-<object data="./assets/Engineering 60 - Notebook Syllabus.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="./assets/Engineering 60 - Notebook Syllabus.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/Engineering 60 - Notebook Syllabus.pdf">Download PDF</a>.</p>
-    </embed>
+<!-- <div style="page-break-after: always"></div> -->
+
+<object data="./assets/Engineering 60 - Notebook Syllabus.pdf" type="application/pdf" width="100%" height="600px">
+   <embed src="./assets/Engineering 60 - Notebook Syllabus.pdf">
+   <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/Engineering 60 - Notebook Syllabus.pdf">Download PDF</a>.</p>
+
 </object>
+
 <!-- SYLLABUS -->
 
 ## [Lab 1](#table-of-contents)

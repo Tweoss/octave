@@ -1,5 +1,10 @@
 # Octave Notebook
 <!-- padding: 30px !important -->
+
+<form method="get" action="./notes.md">
+   <button type="submit">Download this File in Markdown!</button>
+</form>
+
 ---
 ## Table of Contents
 
@@ -146,6 +151,9 @@
     - [Conditionals](#conditionalslab-11table-of-contents)
       - [Commands](#commands-38)
       - [Output](#output-38)
+    - [Image](#imagelab-11table-of-contents)
+      - [Commands](#commands-39)
+      - [Output](#output-39)
 
 <!-- /code_chunk_output -->
 
@@ -1979,7 +1987,7 @@ b = COV_N / SUM_SQUARE
 a = AVG(2) - b * AVG(1)
 epsilon = std(data(:,2))
 % epsilon = sqrt(sum((data(:,2) - AVG(2)).^2)/(n-1)). This gives a different number from shown.
-disp('68% confidence. r not calcualted')
+disp('68% confidence. r not calculated')
 Y_low = a + b*2020 - epsilon
 Y_high = a + b*2020 + epsilon
 hold on 

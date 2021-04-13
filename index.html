@@ -28,6 +28,9 @@
       <div class="mume markdown-preview  ">
       <h1 class="mume-header" id="octave-notebook">Octave Notebook</h1>
 
+<form method="get" action="./notes.md">
+   <button type="submit">Download this File in Markdown!</button>
+</form>
 <hr>
 <h2 class="mume-header" id="table-of-contents">Table of Contents</h2>
 
@@ -318,6 +321,12 @@
 <ul>
 <li><a href="#commands-38">Commands</a></li>
 <li><a href="#output-38">Output</a></li>
+</ul>
+</li>
+<li><a href="#imagelab-11table-of-contents">Image</a>
+<ul>
+<li><a href="#commands-39">Commands</a></li>
+<li><a href="#output-39">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -2880,7 +2889,7 @@ b <span class="token operator">=</span> COV_N <span class="token operator">/</sp
 a <span class="token operator">=</span> <span class="token function">AVG</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">-</span> b <span class="token operator">*</span> <span class="token function">AVG</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
 epsilon <span class="token operator">=</span> <span class="token function">std</span><span class="token punctuation">(</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token comment">% epsilon = sqrt(sum((data(:,2) - AVG(2)).^2)/(n-1)). This gives a different number from shown.</span>
-<span class="token function">disp</span><span class="token punctuation">(</span><span class="token string">&apos;68% confidence. r not calcualted&apos;</span><span class="token punctuation">)</span>
+<span class="token function">disp</span><span class="token punctuation">(</span><span class="token string">&apos;68% confidence. r not calculated&apos;</span><span class="token punctuation">)</span>
 Y_low <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token operator">*</span><span class="token number">2020</span> <span class="token operator">-</span> epsilon
 Y_high <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token operator">*</span><span class="token number">2020</span> <span class="token operator">+</span> epsilon
 hold on 

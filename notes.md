@@ -2,9 +2,11 @@
 <!-- padding: 30px !important -->
 
 <!-- Button for download -->
-<form method="get" action="./notes.md">
-   <button type="submit">Download this File in Markdown!</button>
-</form>
+<div class="text-center" style="text-align: center;">
+   <form method="get" action="./notes.md">
+      <button type="submit">Download this File in Markdown!</button>
+   </form>
+</div>
 
 ---
 ## Table of Contents

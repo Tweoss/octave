@@ -342,10 +342,10 @@ Variables visible from the current scope:
 
 variables in scope: top scope
 
-	Attr Name        Size                     Bytes  Class
-	==== ====        ====                     =====  ===== 
-	c    x           1x1                         16  double
-	c    y           1x1                         16  double
+   Attr Name        Size                     Bytes  Class
+   ==== ====        ====                     =====  ===== 
+   c    x           1x1                         16  double
+   c    y           1x1                         16  double
 
 Total is 2 elements using 32 bytes
 
@@ -385,9 +385,9 @@ roots(a)
 ```matlab
 ans =
 
-	3.0000 + 5.0000i
-	3.0000 - 5.0000i
-	1.0000 +      0i
+   3.0000 + 5.0000i
+   3.0000 - 5.0000i
+   1.0000 +      0i
 ```
 
 ### [Plotting](#lab-2table-of-contents)
@@ -415,11 +415,11 @@ y =
 
  Columns 1 through 8:
 
-	1.0000   1.4142   1.7321   2.0000   2.2361   2.4495   2.6458   2.8284
+   1.0000   1.4142   1.7321   2.0000   2.2361   2.4495   2.6458   2.8284
 
  Columns 9 and 10:
 
-	3.0000   3.1623
+   3.0000   3.1623
 ```
 #### [Population Table](#exampleslab-2table-of-contents)
 ##### Commands
@@ -438,34 +438,34 @@ disp('')
 ##### Output
 ```matlab
 
-	YEAR    POPULATION
-			(MILLIONS)
+   YEAR    POPULATION
+         (MILLIONS)
 
-	1984    127
-	1986    130
-	1988    136
-	1990    145
-	1992    158
-	1994    178
-	1996    211
+   1984    127
+   1986    130
+   1988    136
+   1990    145
+   1992    158
+   1994    178
+   1996    211
 ```
 #### [Average per Game](#exampleslab-2table-of-contents)
 ##### Commands
 ```matlab
 number1 = input('Enter the points scored in the first game: ');
 if number1 < 0
-	disp('Warning! Input Invalid. Using absolute value.')
-	number1 *= -1;
+   disp('Warning! Input Invalid. Using absolute value.')
+   number1 *= -1;
 end
 number2 = input('Enter the points scored in the second game: ');
 if number2 < 0
-	disp('Warning! Input Invalid. Using absolute value.')
-	number2 *= -1;
+   disp('Warning! Input Invalid. Using absolute value.')
+   number2 *= -1;
 end
 number3 = input('Enter the points scored in the third game: ');
 if number3 < 0
-	disp('Warning! Input Invalid. Using absolute value.')
-	number3 *= -1;
+   disp('Warning! Input Invalid. Using absolute value.')
+   number3 *= -1;
 end
 
 disp('The average of points scored is ')
@@ -717,7 +717,7 @@ y =
 
  Columns 1 through 8:
 
-		0   0.3333   0.5000   0.6000   0.6667   0.7143   0.7500   0.7778
+      0   0.3333   0.5000   0.6000   0.6667   0.7143   0.7500   0.7778
 
  Columns 9 and 10:
 
@@ -745,7 +745,7 @@ x =
 
 y =
 
-		0
+      0
    1.4142
    2.0000
    1.4142
@@ -769,17 +769,17 @@ ans = 2
 
 ans =
 
-	1   61
+   1   61
 
 ans =
 
-	2   61
+   2   61
 
 ans =
 
  Columns 1 through 8:
 
-		0   0.1987   0.3894   0.5646   0.7174   0.8415   0.9320   0.9854
+      0   0.1987   0.3894   0.5646   0.7174   0.8415   0.9320   0.9854
 
  Columns 9 and 10:
 
@@ -1094,18 +1094,18 @@ ans = 2.2135e-06
 ```matlab
 help disp
 function temp = convert(Ti, Tf)
-	C = [Ti: Tf]';
-	F = 9/5*C + 32
-	temp = [C F];
+   C = [Ti: Tf]';
+   F = 9/5*C + 32
+   temp = [C F];
 end
 convert(-1, 10)
 
 function output = fact(n)
-	output = 1;
-	while n > 1
-		output *= n;
-		n--;
-	endwhile
+   output = 1;
+   while n > 1
+      output *= n;
+      n--;
+   endwhile
 end
 
 fact(4)
@@ -1113,14 +1113,14 @@ fact(9)
 
 
 function out = crossprod (u, v)
-	out = [u(2)*v(3) - u(3)*v(2), u(3)*v(1) - u(1)*v(3), u(1)*v(2) - u(2)*v(1)];
+   out = [u(2)*v(3) - u(3)*v(2), u(3)*v(1) - u(1)*v(3), u(1)*v(2) - u(2)*v(1)];
 end
 
 crossprod([1,0,0], [0,1,0])
 crossprod([0,1,0], [0,0,1])
 
 function out = summer(r, n)
-	out = (r^(n+1)-1)/(r-1);
+   out = (r^(n+1)-1)/(r-1);
 end
 
 summer(0.5, 5)
@@ -1128,7 +1128,7 @@ summer(1/3, 2)
 
 
 function out = interest(X, n, r, k) 
-	out = X * ((1+r/k)^(k*n)-1);
+   out = X * ((1+r/k)^(k*n)-1);
 end
 
 format bank
@@ -1745,9 +1745,9 @@ ans =
 ```matlab
 v = 1; i = 1; num = 0;
 while num < 10000
-	num = 2^i;
-	v = [v; num];
-	i = i + 1;
+   num = 2^i;
+   v = [v; num];
+   i = i + 1;
 end
 v
 ```
@@ -1778,20 +1778,20 @@ v =
 %------------- This is the script file 'work.m' -------------
 A = ones(10)
 for i = 1:10
-	disp(i)
-	if i == 5 
-		keyboard
-	elseif i==4
-		for j=1:10
-			switch mod(A(3,j),2)
-				case 0
-					A(4,j) = 1;
-				case 1
-					A (4,j) = -2;
-			end
-		end
-	end
-	A(:,i) = i*A(:,i);
+   disp(i)
+   if i == 5 
+      keyboard
+   elseif i==4
+      for j=1:10
+         switch mod(A(3,j),2)
+            case 0
+               A(4,j) = 1;
+            case 1
+               A (4,j) = -2;
+         end
+      end
+   end
+   A(:,i) = i*A(:,i);
 end
 %----------------------- CLI Commands -----------------------
 work
@@ -2369,10 +2369,10 @@ randi(2,2,3)
 magic(3)
 A = magic(4)
 for i = 1:4 
-	row = sum(A(i,:))
+   row = sum(A(i,:))
 endfor
 for i = 1:4 
-	col = sum(A(:,i))
+   col = sum(A(:,i))
 endfor
 diagonal = A(1,1) + A(2,2) + A(3,3) + A(4,4)
 diagonal = A(1,4) + A(2,3) + A(3,2) + A(4,1)
@@ -2467,7 +2467,7 @@ else
          printf('Why do astronauts use Linux?\nBecause they can''t open Windows in space.\n');
       case 'linux'
          disp('"People assume that time is a strict progression of cause to effect but, actually, from a non-linear, non-subjective viewpoint - it''s more like a big ball of wibbly wobbly... time-y wimey... stuff." - The Doctor')
-	end
+   end
 endif
 ```
 #### Output
@@ -2483,15 +2483,15 @@ ImageMap = imread(imageFile);
 rows = size(ImageMap,1); 
 columns = size(ImageMap,2);
 if (rows > 0 && columns > 0) 
-	y = 1; 
+   y = 1; 
 while y <= rows
-	for x = 1:columns
-		for i = 1:3
-			ImageMap(y, x, i) = 255 - ImageMap(y, x, i); end
-		end
-		y = y + 1;
-	end
-	imwrite(ImageMap, imageFile);
+   for x = 1:columns
+      for i = 1:3
+         ImageMap(y, x, i) = 255 - ImageMap(y, x, i); end
+      end
+      y = y + 1;
+   end
+   imwrite(ImageMap, imageFile);
 end
 ```
 #### Output

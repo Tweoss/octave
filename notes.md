@@ -6,6 +6,9 @@
    <form method="get" action="./notes.md">
       <button type="submit">Download this File in Markdown!</button>
    </form>
+   <br/>
+   <p>or </p>
+   <p>View this interactively at <a href="https://tweoss.github.io/octave/"> https://tweoss.github.io/octave/ </a><b>Strongly Recommended</b></p>
 </div>
 
 ---

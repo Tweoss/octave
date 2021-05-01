@@ -160,6 +160,13 @@
     - [Image](#imagelab-11table-of-contents)
       - [Commands](#commands-39)
       - [Output](#output-39)
+  - [Lab 12](#lab-12table-of-contents)
+    - [The Great Bike Race](#the-great-bike-racelab-12table-of-contents)
+      - [Commands](#commands-40)
+      - [Output](#output-40)
+    - [Simultaneous Arrival Plot](#simultaneous-arrival-plotlab-12table-of-contents)
+      - [Commands](#commands-41)
+      - [Output](#output-41)
 
 <!-- /code_chunk_output -->
 
@@ -240,7 +247,7 @@ x =
 | 1\. Equation of Line             |                           | exponent & complex func           | p58           |                        | While Loops                  |                                   |
 | 2\. Vectors (a,b,c)              |                           | round off functions               |               | p59                    |                              | For Loops                         |        |
 | 3\. Points on Circle             |                           | 3.2.5 Matrix functions            |               | p59                    |                              | If - Else Conditionals            |        |
-| 4\. Geometric Series             |                           | 3.2.6 Character strings           |               | p59,61                 | nam=\['Doe'; 'Ravi''\]       | If - Else - If Swith-Case         |        |
+| 4\. Geometric Series             |                           | 3.2.6 Character strings           |               | p59,61                 | nam=['Doe'; 'Ravi']       | If - Else - If Swith-Case         |        |
 | 5\. Matrices & Vectors           |                           | Matrix function vs Array          |               | p60 Fig 3.4            | EXAMPLE                      | Editor TerminalVelocity           |        |
 |                                  |                           | Manipulating char strings         |               | p61                    |                              | Image File - Pretty               |        |
 | **Tab  #3**                  |                           | Eval function                     |               | p.62-63                | strcmp, num2str              | Exiting Stopping a Loop           |        |
@@ -275,10 +282,9 @@ x =
 
 <!-- <div style="page-break-after: always"></div> -->
 
-<object data="./assets/Engineering 60 - Notebook Syllabus.pdf" type="application/pdf" width="100%" height="600px">
-   <embed src="./assets/Engineering 60 - Notebook Syllabus.pdf">
-   <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./assets/Engineering 60 - Notebook Syllabus.pdf">Download PDF</a>.</p>
-
+<object data="./assets/Engineering_60_Notebook Syllabus.pdf" type="application/pdf" width="100%" height="600px">
+   <embed src="./assets/Engineering_60_Notebook Syllabus.pdf">
+   <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://tweoss.github.io/assets/Engineering_60_Notebook_Syllabus.pdf">tweoss.github.io/assets/Engineering_60_Notebook_Syllabus.pdf</a>.</p>
 </object>
 
 <!-- SYLLABUS -->
@@ -2500,3 +2506,51 @@ end
 #### Output
 ![Pretty Png](./assets/pretty.png)
 ![Inverted Pretty](./assets/pretty_inverted.png)
+
+
+---
+## [Lab 12](#table-of-contents)
+
+### [The Great Bike Race](#lab-12table-of-contents)
+#### Commands
+```matlab
+x = 0:20;
+y = 2/7*x +6;
+z = 3/5 * x + 2;
+hold on;
+plot(x,x,'b',x,y,'g',x,z,'r')
+plot(42/5,42/5, 'go');
+plot((6-2)/(3/5-2/7),(6-2)/(3/5-2/7)*2/7+6, 'go');
+plot(5,5, 'ro');
+hold off;
+text (0,0,"Jill overtakes Elizabeth", "position", [4 9 0]);
+text (0,0,"Kim overtakes Elizabeth", "position", [13 9 0]);
+text (0,0,"Jill overtakes Kim", "position", [5.5 5 0]);
+title ('The Great Bike Race');
+xlabel('seconds'); ylabel('distance in meters');
+```
+#### Output
+![Bike Race](./assets/bike_race.png)
+
+### [Simultaneous Arrival Plot](#lab-12table-of-contents)
+#### Commands
+```matlab
+x_fighter = 0:10:300;
+x_b7 = 30:10:300;
+m_fighter = -600/60;
+b_fighter = 2500;
+minutes_taken_fighter = b_fighter / (-m_fighter);
+minutes_taken_b7 = minutes_taken_fighter - 30;
+m_b7 = -500/60;
+b_b7 = - minutes_taken_b7 * m_b7;
+
+y_fighter = x_fighter * m_fighter + b_fighter;
+y_b7 = (x_b7 - 30) * m_b7 + b_b7;
+
+plot(x_fighter,y_fighter,'b',x_b7,y_b7,'r')
+title ('Simultaneous Arrival Time');
+xlabel('minutes'); ylabel('distance from destination');
+legend ("Fighter", "B737");
+```
+#### Output
+![Simultaneous Arrival Graph](./assets/simultaneous_arrival.png)

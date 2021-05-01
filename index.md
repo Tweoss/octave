@@ -282,8 +282,8 @@ x =
 
 <!-- <div style="page-break-after: always"></div> -->
 
-<object data="./assets/Engineering_60_Notebook Syllabus.pdf" type="application/pdf" width="100%" height="600px">
-   <embed src="./assets/Engineering_60_Notebook Syllabus.pdf">
+<object data="./assets/Engineering_60_Notebook_Syllabus.pdf" type="application/pdf" width="100%" height="600px">
+   <embed src="./assets/Engineering_60_Notebook_Syllabus.pdf">
    <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://tweoss.github.io/octave/assets/Engineering_60_Notebook_Syllabus.pdf">tweoss.github.io/octave/assets/Engineering_60_Notebook_Syllabus.pdf</a>.</p>
 </object>
 

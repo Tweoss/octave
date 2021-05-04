@@ -591,6 +591,23 @@ pre[data-line] .line-highlight[data-end]:after {
 </li>
 </ul>
 </li>
+<li><a href="#lab-extratable-of-contents">Lab Extra</a>
+<ul>
+<li><a href="#debugginglab-extratable-of-contents">Debugging</a></li>
+<li><a href="#file-systemlab-extratable-of-contents">File System</a>
+<ul>
+<li><a href="#commands-42">Commands</a></li>
+<li><a href="#output-42">Output</a></li>
+</ul>
+</li>
+<li><a href="#geometric-sumlab-extratable-of-contents">Geometric Sum</a>
+<ul>
+<li><a href="#commands-43">Commands</a></li>
+<li><a href="#output-43">Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -3678,7 +3695,63 @@ y_b7 <span class="token operator">=</span> <span class="token punctuation">(</sp
 </pre><h4 class="mume-header" id="output-41">Output</h4>
 
 <p><img src="./assets/simultaneous_arrival.png" alt="Simultaneous Arrival Graph"></p>
+<hr>
+<h2 class="mume-header" id="lab-extratable-of-contents"><a href="#table-of-contents">Lab Extra</a></h2>
 
+<p>Extra examples to demonstrate proficiency of skills in the check sheet.</p>
+<h3 class="mume-header" id="debugginglab-extratable-of-contents"><a href="#lab-extratable-of-contents">Debugging</a></h3>
+
+<p><img src="./assets/debug_example.png" alt="Debugging"></p>
+<h3 class="mume-header" id="file-systemlab-extratable-of-contents"><a href="#lab-extratable-of-contents">File System</a></h3>
+
+<h4 class="mume-header" id="commands-42">Commands</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab">x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+ls
+mkdir temp_example
+cd temp_example
+save var_file x
+type var_file
+ls
+cd <span class="token punctuation">.</span><span class="token punctuation">.</span>
+ls
+</pre><h4 class="mume-header" id="output-42">Output</h4>
+
+<pre data-role="codeBlock" data-info="text" class="language-text">MatlabNotesPadded.pdf   index.md                notes.m                 quizzes                 velocity.m
+assets                  index.pdf               notes.pdf               rating_to_pound.m
+index.html              mars_velocity.m         octave-workspace        regex.txt
+# Created by Octave 6.1.0, Mon May 03 22:41:06 2021 PDT &lt;francischua@Francis-MBP.local&gt;
+# name: x
+# type: scalar
+1
+
+
+
+var_file
+MatlabNotesPadded.pdf   index.md                notes.m                 quizzes                 temp_example
+assets                  index.pdf               notes.pdf               rating_to_pound.m       velocity.m
+index.html              mars_velocity.m         octave-workspace        regex.txt
+</pre><h3 class="mume-header" id="geometric-sumlab-extratable-of-contents"><a href="#lab-extratable-of-contents">Geometric Sum</a></h3>
+
+<h4 class="mume-header" id="commands-43">Commands</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token function">output_precision</span> <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+r <span class="token operator">=</span> <span class="token function">input</span><span class="token punctuation">(</span><span class="token string">&apos;Ratio = &apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+first_element <span class="token operator">=</span> <span class="token function">input</span><span class="token punctuation">(</span><span class="token string">&apos;First Element = &apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+approximation <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token number">i</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token operator">:</span><span class="token number">10</span>
+  approximation <span class="token operator">+</span><span class="token operator">=</span> r<span class="token operator">^</span><span class="token number">i</span> <span class="token operator">*</span> first_element<span class="token punctuation">;</span>
+endfor
+approximation
+
+exact <span class="token operator">=</span> first_element <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> r<span class="token punctuation">)</span>
+</pre><h4 class="mume-header" id="output-43">Output</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab">Ratio <span class="token operator">=</span> <span class="token number">0.523</span>
+First Element <span class="token operator">=</span> <span class="token number">6</span>
+approximation <span class="token operator">=</span> <span class="token number">12.56854352</span>
+exact <span class="token operator">=</span> <span class="token number">12.578616350</span>
+</pre>
       </div>
       
       

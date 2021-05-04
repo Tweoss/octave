@@ -167,6 +167,14 @@
     - [Simultaneous Arrival Plot](#simultaneous-arrival-plotlab-12table-of-contents)
       - [Commands](#commands-41)
       - [Output](#output-41)
+  - [Lab Extra](#lab-extratable-of-contents)
+    - [Debugging](#debugginglab-extratable-of-contents)
+    - [File System](#file-systemlab-extratable-of-contents)
+      - [Commands](#commands-42)
+      - [Output](#output-42)
+    - [Geometric Sum](#geometric-sumlab-extratable-of-contents)
+      - [Commands](#commands-43)
+      - [Output](#output-43)
 
 <!-- /code_chunk_output -->
 
@@ -2554,3 +2562,63 @@ legend ("Fighter", "B737");
 ```
 #### Output
 ![Simultaneous Arrival Graph](./assets/simultaneous_arrival.png)
+
+
+---
+## [Lab Extra](#table-of-contents)
+Extra examples to demonstrate proficiency of skills in the check sheet.
+### [Debugging](#lab-extratable-of-contents)
+![Debugging](./assets/debug_example.png)
+
+### [File System](#lab-extratable-of-contents)
+#### Commands
+```matlab
+x = 1;
+ls
+mkdir temp_example
+cd temp_example
+save var_file x
+type var_file
+ls
+cd ..
+ls
+```
+#### Output
+```text
+MatlabNotesPadded.pdf   index.md                notes.m                 quizzes                 velocity.m
+assets                  index.pdf               notes.pdf               rating_to_pound.m
+index.html              mars_velocity.m         octave-workspace        regex.txt
+# Created by Octave 6.1.0, Mon May 03 22:41:06 2021 PDT <francischua@Francis-MBP.local>
+# name: x
+# type: scalar
+1
+
+
+
+var_file
+MatlabNotesPadded.pdf   index.md                notes.m                 quizzes                 temp_example
+assets                  index.pdf               notes.pdf               rating_to_pound.m       velocity.m
+index.html              mars_velocity.m         octave-workspace        regex.txt
+```
+
+### [Geometric Sum](#lab-extratable-of-contents)
+#### Commands
+```matlab
+output_precision (10)
+r = input('Ratio = ');
+first_element = input('First Element = ');
+approximation = 0;
+for i = 0:10
+  approximation += r^i * first_element;
+endfor
+approximation
+
+exact = first_element / (1 - r)
+```
+#### Output
+```matlab
+Ratio = 0.523
+First Element = 6
+approximation = 12.56854352
+exact = 12.578616350
+```

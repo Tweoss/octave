@@ -606,6 +606,12 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#output-43">Output</a></li>
 </ul>
 </li>
+<li><a href="#bacteria-outbreaklab-extratable-of-contents">Bacteria Outbreak</a>
+<ul>
+<li><a href="#commands-44">Commands</a></li>
+<li><a href="#output-44">Output</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -3751,7 +3757,36 @@ exact <span class="token operator">=</span> first_element <span class="token ope
 First Element <span class="token operator">=</span> <span class="token number">6</span>
 approximation <span class="token operator">=</span> <span class="token number">12.56854352</span>
 exact <span class="token operator">=</span> <span class="token number">12.578616350</span>
-</pre>
+</pre><h3 class="mume-header" id="bacteria-outbreaklab-extratable-of-contents"><a href="#lab-extratable-of-contents">Bacteria Outbreak</a></h3>
+
+<h4 class="mume-header" id="commands-44">Commands</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab">x <span class="token operator">=</span> <span class="token number">0</span><span class="token operator">:</span><span class="token number">0.1</span><span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token function">title</span> <span class="token punctuation">(</span><span class="token string">&apos;Bacteria Growth&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">xlabel</span><span class="token punctuation">(</span><span class="token string">&apos;Time (hours)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">ylabel</span><span class="token punctuation">(</span><span class="token string">&apos;Bacteria Population, P(t)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold on<span class="token punctuation">;</span>
+<span class="token keyword">for</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token number">0.1</span><span class="token operator">:</span><span class="token number">2</span>
+  <span class="token function">plot</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token operator">/</span>a<span class="token operator">*</span><span class="token function">exp</span><span class="token punctuation">(</span><span class="token number">.5</span><span class="token operator">*</span>a<span class="token operator">*</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token function">legend</span> <span class="token punctuation">(</span>&quot;<span class="token number">1.0</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.1</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.2</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.3</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.4</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.5</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.6</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.7</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.8</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.9</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">2.0</span>&quot;<span class="token punctuation">,</span> &quot;location&quot;<span class="token punctuation">,</span> &quot;west&quot;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold off<span class="token punctuation">;</span>
+
+<span class="token keyword">pause</span>
+
+clf
+<span class="token function">title</span> <span class="token punctuation">(</span><span class="token string">&apos;Bacteria Growth&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">xlabel</span><span class="token punctuation">(</span><span class="token string">&apos;Time (hours)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">ylabel</span><span class="token punctuation">(</span><span class="token string">&apos;Bacteria Population, P(t)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold on<span class="token punctuation">;</span>
+<span class="token keyword">for</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span><span class="token number">0.1</span><span class="token operator">:</span><span class="token number">2</span>
+  <span class="token function">semilogy</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token operator">/</span>a<span class="token operator">*</span><span class="token function">exp</span><span class="token punctuation">(</span><span class="token number">.5</span><span class="token operator">*</span>a<span class="token operator">*</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token function">legend</span> <span class="token punctuation">(</span>&quot;<span class="token number">1.0</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.1</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.2</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.3</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.4</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.5</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.6</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.7</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.8</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">1.9</span>&quot;<span class="token punctuation">,</span> &quot;<span class="token number">2.0</span>&quot;<span class="token punctuation">,</span> &quot;location&quot;<span class="token punctuation">,</span> &quot;west&quot;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold off<span class="token punctuation">;</span>
+</pre><h4 class="mume-header" id="output-44">Output</h4>
+
+<p><img src="./assets/bacteria_growth_linear.png" alt="Bacteria Graph Linear Scale"></p>
+<p><img src="./assets/bacteria_growth_log.png" alt="Bacteria Graph Log Scale"></p>
+
       </div>
       
       

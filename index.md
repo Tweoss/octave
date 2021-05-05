@@ -175,6 +175,9 @@
     - [Geometric Sum](#geometric-sumlab-extratable-of-contents)
       - [Commands](#commands-43)
       - [Output](#output-43)
+    - [Bacteria Outbreak](#bacteria-outbreaklab-extratable-of-contents)
+      - [Commands](#commands-44)
+      - [Output](#output-44)
 
 <!-- /code_chunk_output -->
 
@@ -2622,3 +2625,34 @@ First Element = 6
 approximation = 12.56854352
 exact = 12.578616350
 ```
+
+### [Bacteria Outbreak](#lab-extratable-of-contents)
+#### Commands
+```matlab
+x = 0:0.1:5;
+title ('Bacteria Growth');
+xlabel('Time (hours)'); ylabel('Bacteria Population, P(t)');
+hold on;
+for a = 1:0.1:2
+  plot(x, 1000/a*exp(.5*a*x))
+end
+legend ("1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "2.0", "location", "west");
+hold off;
+
+pause
+
+clf
+title ('Bacteria Growth');
+xlabel('Time (hours)'); ylabel('Bacteria Population, P(t)');
+hold on;
+for a = 1:0.1:2
+  semilogy(x, 1000/a*exp(.5*a*x))
+end
+legend ("1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "2.0", "location", "west");
+hold off;
+```
+#### Output
+![Bacteria Graph Linear Scale](./assets/bacteria_growth_linear.png)
+
+![Bacteria Graph Log Scale](./assets/bacteria_growth_log.png)
+

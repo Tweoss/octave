@@ -3,7 +3,7 @@
 
 <!-- Button for download -->
 <div class="text-center" style="text-align: center;">
-   <form method="get" action="./notes.md">
+   <form method="get" action="./index.md">
       <button type="submit">Download this File in Markdown!</button>
    </form>
    <br/>

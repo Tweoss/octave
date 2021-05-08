@@ -178,6 +178,9 @@
     - [Bacteria Outbreak](#bacteria-outbreaklab-extratable-of-contents)
       - [Commands](#commands-44)
       - [Output](#output-44)
+    - [Symbolic Math](#symbolic-mathlab-extratable-of-contents)
+      - [Commands](#commands-45)
+      - [Output](#output-45)
 
 <!-- /code_chunk_output -->
 
@@ -2656,3 +2659,31 @@ hold off;
 
 ![Bacteria Graph Log Scale](./assets/bacteria_growth_log.png)
 
+### [Symbolic Math](#lab-extratable-of-contents)
+The symbolic package for Octave must be installed.
+#### Commands
+```matlab
+pkg load symbolic
+syms x y
+x =  y + 3
+cos(x + 2*ei(2*y))
+
+
+clear
+syms x
+f = cos(x) + 2/log(x)
+F = int(f, x)
+# li is the logarithmic integral
+```
+#### Output
+```matlab
+x = (sym) y + 3
+ans = (sym) cos(y + 2⋅Ei(2⋅y) + 3)
+f = (sym)
+
+             2   
+  cos(x) + ──────
+           log(x)
+
+F = (sym) sin(x) + 2⋅li(x)
+```

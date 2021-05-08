@@ -3786,7 +3786,34 @@ hold off<span class="token punctuation">;</span>
 
 <p><img src="./assets/bacteria_growth_linear.png" alt="Bacteria Graph Linear Scale"></p>
 <p><img src="./assets/bacteria_growth_log.png" alt="Bacteria Graph Log Scale"></p>
+<h3 class="mume-header" id="symbolic-mathlab-extratable-of-contents"><a href="#lab-extratable-of-contents">Symbolic Math</a></h3>
 
+<p>The symbolic package for Octave must be installed.</p>
+<h4 class="mume-header" id="commands-45">Commands</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab">pkg load symbolic
+syms x y
+x <span class="token operator">=</span>  y <span class="token operator">+</span> <span class="token number">3</span>
+<span class="token function">cos</span><span class="token punctuation">(</span>x <span class="token operator">+</span> <span class="token number">2</span><span class="token operator">*</span><span class="token function">ei</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+clear
+syms x
+f <span class="token operator">=</span> <span class="token function">cos</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token operator">/</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+F <span class="token operator">=</span> <span class="token function">int</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> x<span class="token punctuation">)</span>
+# li is the logarithmic integral
+</pre><h4 class="mume-header" id="output-45">Output</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab">x <span class="token operator">=</span> <span class="token punctuation">(</span>sym<span class="token punctuation">)</span> y <span class="token operator">+</span> <span class="token number">3</span>
+ans <span class="token operator">=</span> <span class="token punctuation">(</span>sym<span class="token punctuation">)</span> <span class="token function">cos</span><span class="token punctuation">(</span>y <span class="token operator">+</span> <span class="token number">2</span>&#x22C5;<span class="token function">Ei</span><span class="token punctuation">(</span><span class="token number">2</span>&#x22C5;y<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">)</span>
+f <span class="token operator">=</span> <span class="token punctuation">(</span>sym<span class="token punctuation">)</span>
+
+             <span class="token number">2</span>   
+  <span class="token function">cos</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">+</span> &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;
+           <span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+
+F <span class="token operator">=</span> <span class="token punctuation">(</span>sym<span class="token punctuation">)</span> <span class="token function">sin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">2</span>&#x22C5;<span class="token function">li</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+</pre>
       </div>
       
       
